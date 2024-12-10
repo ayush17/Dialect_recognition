@@ -35,7 +35,7 @@ Clone the project repository from your source control platform:
 ```bash
 git clone <repository_url>
 cd <repository_name>
-
+```
 ### Step 2: Set Up Virtual Environment
 
 Create a virtual environment and activate it:
@@ -43,3 +43,25 @@ Create a virtual environment and activate it:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use venv\Scripts\activate
+```
+
+### Step 3: Install Dependencies
+
+Install all the required Python packages using the provided `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Prepare the Dataset
+
+1. Ensure your dataset of audio files is organized in subfolders under the `audio_files` directory. 
+   - Each subfolder should represent a class (e.g., dialect) and contain `.wav` files corresponding to that class.
+
+
+2. Place the `audio_files` directory in the root folder of the project.
+
+3. The script will automatically preprocess these files, extract features, and use them for training.
+
+
+
