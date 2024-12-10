@@ -59,9 +59,26 @@ pip install -r requirements.txt
    - Each subfolder should represent a class (e.g., dialect) and contain `.wav` files corresponding to that class.
 
 
+
 2. Place the `audio_files` directory in the root folder of the project.
 
 3. The script will automatically preprocess these files, extract features, and use them for training.
 
+```bash
+python extract_features_from_audio.py
+```
 
 
+### Step 5: Train the model
+You can directly train the model
+```bash
+python modelTrain.py
+```
+The model will train and will be saved by the name of best_model_{epoch_number}
+
+### Step 6: Test the model
+
+There are 4 files in test_files. For which model will test the data
+```bash
+python testAudio.py
+```
