@@ -1,4 +1,4 @@
-# Dialect Classification using Wav2Vec2
+# Dialect Classification
 
 This project focuses on building and training a machine learning model to classify regional dialects from audio files using **Wav2Vec2**, a state-of-the-art pre-trained model for speech processing. The model is trained on labeled audio data and evaluated for its accuracy in classifying dialects.
 
