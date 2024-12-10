@@ -1,0 +1,5 @@
+audio_files/
+output_features/
+myenv/
+saved_model/
+logs/
