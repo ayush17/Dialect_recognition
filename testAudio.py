@@ -5,7 +5,7 @@ import torchaudio
 import os
 
 # Constants
-MODEL_PATH = "saved_model/best_model_epoch_11.pth"  # Update with your saved model path
+MODEL_PATH = "saved_model/best_model_epoch_8.pth"  # Update with your saved model path
 LABEL_MAPPING = {
     0: "midlands_female", 1: "scottish_male", 2: "midlands_male", 3: "welsh_male",
     4: "southern_female", 5: "irish_male", 6: "southern_male", 7: "welsh_female",
@@ -62,7 +62,7 @@ def predict_dialect(audio_path):
 
 
 # Define the directory containing test audio files
-TEST_FILES_DIR = "test_files/welsh_male"  # Replace with your actual directory path
+TEST_FILES_DIR = "test_files"  # Replace with your actual directory path
 
 # Get all .wav files in the test directory
 test_audio_files = [os.path.join(TEST_FILES_DIR, f) for f in os.listdir(TEST_FILES_DIR) if f.endswith('.wav')]

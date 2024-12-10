@@ -16,9 +16,9 @@ random.seed(SEED)
 
 # Constants
 AUDIO_DIR = "audio_files"
-BATCH_SIZE = 8
-MAX_DATA_POINTS = 400
-NUM_EPOCHS = 50
+BATCH_SIZE = 64
+MAX_DATA_POINTS = 700
+NUM_EPOCHS = 10
 LEARNING_RATE = 1e-4
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 MODEL_NAME = "facebook/wav2vec2-base"
